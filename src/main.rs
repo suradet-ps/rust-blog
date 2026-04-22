@@ -111,7 +111,7 @@ fn App() -> impl IntoView {
             </article>
 
             <footer class="text-center mt-20 pt-10 border-t border-gray-200 text-gray-400 text-sm">
-                "Created with ❤️ by pharmacist-sabot using Leptos & Rust"
+                "Created with ❤️ by suradet-ps using Leptos & Rust"
             </footer>
         </div>
     }
