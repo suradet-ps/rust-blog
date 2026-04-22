@@ -1,6 +1,6 @@
 # Rust Variables: Interactive Blog 🦀
 
-![Build Status](https://github.com/pharmacist-sabot/rust-blog/actions/workflows/deploy.yml/badge.svg)
+![Build Status](https://github.com/suradet-ps/rust-blog/actions/workflows/deploy.yml/badge.svg)
 ![Rust](https://img.shields.io/badge/built_with-Rust-dca282.svg)
 ![Leptos](https://img.shields.io/badge/framework-Leptos-red)
 ![Tailwind](https://img.shields.io/badge/styling-Tailwind_CSS-38bdf8)
@@ -8,7 +8,7 @@
 A modern, interactive blog post demonstrating **Rust Variables and Mutability**.
 This project is not just *about* Rust—it is **built with Rust**, running entirely in the browser using WebAssembly (Wasm) via the **Leptos** framework.
 
-[**View Live Demo**](https://pharmacist-sabot.github.io/rust-blog/)
+[**View Live Demo**](https://suradet-ps.github.io/rust-blog/)
 
 ## About The Project
 
@@ -50,7 +50,7 @@ To run this project locally, you need to have Rust installed on your machine.
 
 1.  **Clone the repository**
     ```sh
-    git clone https://github.com/pharmacist-sabot/rust-blog.git
+    git clone https://github.com/suradet-ps/rust-blog.git
     cd rust-blog
     ```
 
