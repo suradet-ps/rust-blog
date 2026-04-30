@@ -1,8 +1,8 @@
-use leptos::*;
+use leptos::prelude::*;
 
-// Code Block
+// Code Block Component
 #[component]
-fn CodeBlock(code: &'static str) -> impl IntoView {
+fn CodeBlock(code: String) -> impl IntoView {
     view! {
         <pre class="bg-gray-800 text-gray-100 p-4 rounded-lg overflow-x-auto my-4 font-mono text-sm shadow-lg border border-gray-700">
             <code>{code}</code>
@@ -10,7 +10,7 @@ fn CodeBlock(code: &'static str) -> impl IntoView {
     }
 }
 
-// Info Box
+// Info Box Component
 #[component]
 fn InfoBox(title: &'static str, children: Children) -> impl IntoView {
     view! {
@@ -27,7 +27,6 @@ fn App() -> impl IntoView {
 
     view! {
         <div class="container mx-auto max-w-3xl px-4 py-12">
-            // Header
             <header class="text-center mb-12">
                 <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-brand uppercase bg-blue-100 rounded-full">
                     "Built with Rust 🦀"
@@ -40,7 +39,6 @@ fn App() -> impl IntoView {
                 </p>
             </header>
 
-            // Content Body
             <article class="prose prose-lg max-w-none text-gray-600">
                 <p class="mb-4">
                     "ในภาษา Rust ตัวแปรจะเป็นแบบ "
@@ -58,7 +56,7 @@ fn App() -> impl IntoView {
     println!("ค่าของ x คือ: {x}");
     x = 6;  // ❌ Error! assign twice to immutable variable
     println!("ค่าของ x คือ: {x}");
-    }"# />
+    }"#.to_string() />
 
                 <InfoBox title="ทำไมถึงออกแบบมาแบบนี้?">
                     "การทำให้ตัวแปรไม่เปลี่ยนแปลงโดยค่าเริ่มต้นช่วยลดข้อผิดพลาดจากการเปลี่ยนค่าโดยไม่ตั้งใจ
