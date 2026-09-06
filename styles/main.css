@@ -684,6 +684,13 @@ a:hover .back-link,
     margin: 0;
 }
 
+/* first (label) columns get a little breathing room instead of shrinking
+   to their narrowest cell. */
+.prose .table-wrap table th:first-child,
+.prose .table-wrap table td:first-child {
+    min-width: 6rem;
+}
+
 /* code blocks - a dark plate in both themes, highlighted by syntect. */
 .prose pre {
     position: relative;
